@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Explore the future of Web 3.0, the rise of electric vs hydrogen cars, AI artistry, and more. Stay updated on the latest trends in technology and innovation."
+    />
+    <meta name="author" content="Tuna Erten" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaq.css" />
+
+    <title>Frontend Mentor | News homepage</title>
+  </head>
+  <body>
+    <div class="overlay" aria-hidden="true"></div>
+    <div class="main-container">
+      <header class="header flex-row">
+        <a href="/index.html" aria-label="Go to homepage">
+          <img src="/assets/images/logo.svg" alt="W logo" class="logo" />
+        </a>
+
+        <button
+          class="hamburger-menu"
+          aria-label="Open navigation"
+          aria-expanded="false"
+        >
+          <img src="/assets/images/icon-menu.svg" alt="" aria-hidden="true" />
+        </button>
+
+        <nav class="main-nav" aria-label="navigation-bar">
+          <button class="close-menu" aria-label="Close navigation">
+            <img
+              src="/assets/images/icon-menu-close.svg"
+              alt=""
+              aria-hidden="true"
+            />
+          </button>
+
+          <ul class="main-nav-list-desktop">
+            <li class="flex-row">
+              <a href="/u-contruction.html" class="main-nav-link">Home</a
+              ><a href="/u-contruction.html" class="main-nav-link">New</a
+              ><a href="/u-contruction.html" class="main-nav-link">Popular</a
+              ><a href="/u-contruction.html" class="main-nav-link">Trending</a
+              ><a href="/u-contruction.html" class="main-nav-link"
+                >Categories</a
+              >
+            </li>
+          </ul>
+
+          <ul class="main-nav-list-mobile" aria-hidden="true">
+            <li class="flex-row">
+              <a href="/u-contruction.html" class="main-nav-link">Home</a
+              ><a href="/u-contruction.html" class="main-nav-link">New</a
+              ><a href="/u-contruction.html" class="main-nav-link">Popular</a
+              ><a href="/u-contruction.html" class="main-nav-link">Trending</a
+              ><a href="/u-contruction.html" class="main-nav-link"
+                >Categories</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <main class="grid">
+        <section class="hero" aria-labelledby="hero-heading">
+          <div class="hero-img-container">
+            <picture>
+              <source
+                srcset="/assets/images/image-web-3-desktop.jpg"
+                media="(min-width: 769px)"
+              />
+              <img
+                src="/assets/images/image-web-3-mobile.jpg"
+                alt="Web 3.0 concept illustration"
+              />
+            </picture>
+          </div>
+          <div class="hero-text-container grid">
+            <h1 class="heading-primary" id="hero-heading">
+              The Bright Future of Web 3.0?
+            </h1>
+            <div class="wrapper">
+              <p class="hero-description">
+                We dive into the next evolution of the web that claims to put
+                the power of the platforms back into the hands of the people.
+                But is it really fulfilling its promise?
+              </p>
+              <a href="#" class="btn" aria-label="Read more about Web 3.0"
+                >Read more</a
+              >
+            </div>
+          </div>
+        </section>
+
+        <section class="new" aria-labelledby="new-heading">
+          <div class="container">
+            <h2 class="heading-secondary" id="new-heading">New</h2>
+            <div class="wrapper">
+              <button aria-label="Read more about Hydrogen VS Electric Cars">
+                <span class="subheading">Hydrogen VS Electric Cars</span>
+              </button>
+              <p class="new-text">
+                Will hydrogen-fueled cars ever catch up to EVs?
+              </p>
+              <span class="line" aria-hidden="true"></span>
+            </div>
+
+            <div class="wrapper">
+              <button aria-label="Read more about The Downsides of AI Artistry">
+                <span class="subheading">The Downsides of AI Artistry</span>
+              </button>
+              <p class="new-text">
+                What are the possible adverse effects of on-demand AI image
+                generation?
+              </p>
+              <span class="line" aria-hidden="true"></span>
+            </div>
+
+            <div class="wrapper">
+              <button aria-label="Read more about Is VC Funding Drying Up?">
+                <span class="subheading">Is VC Funding Drying Up?</span>
+              </button>
+              <p class="new-text">
+                Private funding by VC firms is down 50% YOY. We take a look at
+                what that means.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="articels grid" aria-labelledby="articles-heading">
+          <div id="articles-heading" class="article flex-row">
+            <div class="article-img-wrapper">
+              <img
+                src="/assets/images/image-retro-pcs.jpg"
+                alt="Retro PC with modern effects"
+                class="article-img"
+              />
+            </div>
+
+            <div class="article-desc-wrapper">
+              <div class="number">01</div>
+              <button aria-label="Read more about Reviving Retro PCs">
+                <h3 class="article-header">Reviving Retro PCs</h3>
+              </button>
+              <p class="article-description">
+                What happens when old PCs are given modern upgrades?
+              </p>
+            </div>
+          </div>
+
+          <div class="article flex-row">
+            <div class="article-img-wrapper">
+              <img
+                src="/assets/images/image-top-laptops.jpg"
+                alt="keyboard keys"
+                class="article-img"
+              />
+            </div>
+
+            <div class="article-desc-wrapper">
+              <div class="number">02</div>
+              <button aria-label="Read more about Top 10 Laptops of 2022">
+                <h3 class="article-header">Top 10 Laptops of 2022</h3>
+              </button>
+              <p class="article-description">
+                Our best picks for various needs and budgets.
+              </p>
+            </div>
+          </div>
+
+          <div class="article flex-row">
+            <div class="article-img-wrapper">
+              <img
+                src="/assets/images/image-gaming-growth.jpg"
+                alt="
+            console joystick"
+                class="article-img"
+              />
+            </div>
+
+            <div class="article-desc-wrapper">
+              <div class="number">03</div>
+              <button aria-label="Read more about The Growth of Gaming">
+                <h3 class="article-header">The Growth of Gaming</h3>
+              </button>
+              <p class="article-description">
+                How the pandemic has sparked fresh opportunities.
+              </p>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <div class="attribution">
+          Challenge by
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+            >Frontend Mentor</a
+          >. Coded by
+          <a href="https://github.com/tunaerten?tab=repositories">Tuna Erten</a
+          >.
+        </div>
+      </footer>
+      <script defer src="/script.js"></script>
+    </div>
+  </body>
+</html>
